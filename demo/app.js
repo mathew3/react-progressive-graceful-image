@@ -53,12 +53,12 @@ class App extends React.Component {
         {[...Array(5)].map((item, i) => (
           <ProgressiveImage
             key={i + 1}
-            src={`http://placehold.it/594x1024/${i + 1}d${i}${i + 4}${i +
+            src={`https://placehold.it/594x1024/${i + 1}d${i}${i + 4}${i +
               3}a/ffffff/&text=Image${i + 1}`}
-            placeholder={`http://placehold.it/59x102/${i + 1}d${i}${i + 4}${i +
+            placeholder={`https://placehold.it/59x102/${i + 1}d${i}${i + 4}${i +
               3}a/ffffff/&text=Placeholder${i + 1}`}
             srcSetData={{
-              srcSet: `http://placehold.it/594x1024/${i + 1}d${i}${i + 4}${i +
+              srcSet: `https://placehold.it/594x1024/${i + 1}d${i}${i + 4}${i +
                 3}a/ffffff/&text=BigImage${i + 1} 2000w`
             }}
             rootMargin="0% 0% 0%"
