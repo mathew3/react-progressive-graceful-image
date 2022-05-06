@@ -2,6 +2,7 @@ declare module 'react-progressive-graceful-image' {
   export interface ProgressiveImageProps {
     delay?: number;
     onError?: (errorEvent: Event) => void;
+    cb: () => void;
     placeholder: string;
     src: string;
     srcSetData?: {

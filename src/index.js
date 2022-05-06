@@ -12,6 +12,7 @@ type Props = {
   children: (string, boolean, SrcSetData) => React.Node,
   delay?: number,
   onError?: (errorEvent: Event) => void,
+  cb: () => void,
   placeholder: string,
   src: string,
   srcSetData?: SrcSetData,
@@ -142,6 +143,7 @@ export default class ProgressiveImage extends React.Component<Props, State> {
           window.removeEventListener('offline', this.handleOnlineStatus);
         }
       );
+      this.props.cb();
     }
   };
 
