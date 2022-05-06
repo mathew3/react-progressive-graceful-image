@@ -129,6 +129,7 @@ export default class ProgressiveImage extends React.Component<Props, State> {
 
   setImage = () => {
     if (this._isMounted) {
+      console.log('here');
       this.setState(
         {
           image: this.image.src,
